@@ -66,11 +66,11 @@ const questions = ()=>{
     // function writeToFile(, data) {}
 
 fs.writeFile('./READMEOutput.md', generateReadMePage, err => {
-  if(err) thrownewError(err);
+  if(err) thrownewError(err)});
 
 
 // TODO: Create a function to initialize app
-function init() {}
+// function init() {}
 
 // Function call to initialize app
-init();
+// init();
