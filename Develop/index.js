@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const inquirer = require('inquirer');
-// const readMePage= require('./src/page-template');
+const generateReadMePage = require('./src/readme-template');
 
 // TODO: Create an array of questions for user input
 const questions = ()=>{
@@ -19,7 +19,6 @@ const questions = ()=>{
         name: 'projectDescription',
         message: 'Describe your project?'
       },
-
 
       {
         type: 'input',
@@ -64,16 +63,9 @@ const questions = ()=>{
 
 
 // TODO: Create a function to write README file
-function writeToFile(, data) {}
+    // function writeToFile(, data) {}
 
-
-// □ Includes three arguments:
-// ® Arg. 1:  Name of the file being created
-// ® Arg. 2:  Data to be written into file
-// ® Arg. 3:  Callback function used if there is an error
-// □ Synchronous and Asynchronous versions
-// □ Example:
-fs.writeFile('./README.md', "", err => {
+fs.writeFile('./READMEOutput.md', generateReadMePage, err => {
   if(err) thrownewError(err);
 
 
