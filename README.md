@@ -1,4 +1,4 @@
-# Challenge_09:  Professional ReadMe.m
+# Challenge_09:  Professional ReadMe.md
 
 ## Description:  Task is to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package (Links to an external site.).  Command-line prompts will confirm the following items:
 

@@ -1,14 +1,13 @@
-
- module.exports = templateData => {
+function genReadMe(theData) {
     // destructure page data by section
-    const { projectTitle, projectDescription, applicationSite, installationInstructions,usageInstructions, contributionGuidelines, tests, license ...rest } = templateData;
+    const { projectTitle, projectDescription, applicationSite, installationInstructions, usageInstructions, contributionGuidelines, tests, licenses, ...rest } = theData;
 
-            // create the about section
-    const markUpLanguage = (templateData) => {
+    // create the about section
+    // const markUpLanguage = (templateData) => {
 
-        return `
+    return `
 
-        # ${projectTitle}
+        # ${projectTitle} . 
 
 
         ## Project Description
@@ -34,10 +33,10 @@
         
         ## License
         
-        ${license}
-      `;
-    };
+        ${licenses}
 
+        `;
+}
 
-
+module.exports = genReadMe;
 
